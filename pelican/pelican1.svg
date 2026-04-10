@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="A pelican riding a bicycle">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff4ff"/>
+      <stop offset="100%" stop-color="#f6fbff"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9e8a8"/>
+      <stop offset="100%" stop-color="#98ce6f"/>
+    </linearGradient>
+    <style>
+      .line { fill: none; stroke: #1f2a34; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #1f2a34; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="800" height="360" fill="url(#sky)"/>
+  <rect x="0" y="360" width="800" height="140" fill="url(#ground)"/>
+  <!-- Bicycle wheels -->
+  <circle cx="230" cy="360" r="92" fill="#fafcff" stroke="#1f2a34" stroke-width="10"/>
+  <circle cx="550" cy="360" r="92" fill="#fafcff" stroke="#1f2a34" stroke-width="10"/>
+  <circle cx="230" cy="360" r="10" fill="#1f2a34"/>
+  <circle cx="550" cy="360" r="10" fill="#1f2a34"/>
+  <!-- Spokes -->
+  <g class="thin" opacity="0.5">
+    <path d="M230 268v184M138 360h184M168 298l124 124M292 298l-124 124"/>
+    <path d="M550 268v184M458 360h184M488 298l124 124M612 298l-124 124"/>
+  </g>
+  <!-- Bike frame -->
+  <g class="line">
+    <path d="M230 360L340 285L430 360H230"/>
+    <path d="M340 285L370 245L500 245"/>
+    <path d="M430 360L500 245L550 360"/>
+    <path d="M370 245L345 210"/>
+    <path d="M500 245L535 220"/>
+  </g>
+  <path d="M328 205h45" class="line"/>
+  <path d="M528 217h45" class="line"/>
+  <!-- Pedals and chainring -->
+  <circle cx="430" cy="360" r="22" fill="#ffe8a7" stroke="#1f2a34" stroke-width="6"/>
+  <path d="M430 338v44M408 360h44" class="thin"/>
+  <!-- Pelican body -->
+  <ellipse cx="385" cy="208" rx="108" ry="72" fill="#ffffff" stroke="#1f2a34" stroke-width="6"/>
+  <ellipse cx="380" cy="226" rx="84" ry="34" fill="#f2f6fa" opacity="0.9"/>
+  <!-- Pelican tail -->
+  <path d="M280 205l-48 -30l26 48z" fill="#e7edf3" stroke="#1f2a34" stroke-width="5"/>
+  <!-- Wing -->
+  <path d="M342 175c48 -36 110 4 96 56c-10 40 -72 48 -114 20c-30 -20 -18 -56 18 -76z"
+        fill="#dfe8ef" stroke="#1f2a34" stroke-width="5"/>
+  <!-- Neck -->
+  <path d="M445 188c20 -48 64 -66 118 -48c30 10 40 48 8 70c-30 20 -76 10 -106 12"
+        fill="#ffffff" stroke="#1f2a34" stroke-width="6"/>
+  <!-- Beak -->
+  <path d="M568 200l138 -22l-105 62z" fill="#f7b44a" stroke="#1f2a34" stroke-width="6"/>
+  <path d="M565 212c34 26 75 26 122 10c-35 40 -96 48 -134 26z" fill="#ffd98b" stroke="#1f2a34" stroke-width="5"/>
+  <!-- Eye -->
+  <circle cx="548" cy="173" r="9" fill="#ffffff" stroke="#1f2a34" stroke-width="4"/>
+  <circle cx="551" cy="173" r="4" fill="#1f2a34"/>
+  <!-- Pelican riding posture: legs on pedals -->
+  <g class="line">
+    <path d="M338 262L402 330L430 338"/>
+    <path d="M394 266L452 330L452 382"/>
+  </g>
+  <!-- Handlebar grip by wing tip -->
+  <path d="M456 220L523 215" class="line"/>
+  <!-- Fun detail: cap -->
+  <path d="M514 150c22 -20 54 -20 74 -2c-22 4 -48 9 -74 2z" fill="#4da3ff" stroke="#1f2a34" stroke-width="4"/>
+  <path d="M585 150l30 8l-33 8z" fill="#2c7ed6" stroke="#1f2a34" stroke-width="4"/>
+</svg>
